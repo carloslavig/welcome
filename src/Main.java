@@ -25,22 +25,22 @@ public class Main
 
         if (agora.getHour() >0 && agora.getHour() <12)
         {
-            saudacao = "Bom dia, DESGRAÇAAAAAAAAAAAAAAAAAAAAAA";
+            saudacao = "Bom dia! ";
         }
         else if (agora.getHour() >=12 && agora.getHour() <18)
         {
-            saudacao= "Tarde sô";
+            saudacao= "Boa Tarde! ";
         }
         else if (agora.getHour() >=18 && agora.getHour() <24)
         {
-            saudacao= "Boa noite meu consagrado";
+            saudacao= "Boa noite! ";
         }
         else
         {
-            saudacao= "Salve";
+            saudacao= "Salvêê!";
         }
 
-        System.out.printf("Olá, %s. Hoje é %s, %s. %n",nome,diaSemana,saudacao);
+        System.out.printf("Olá, %s, meu consagrado. Hoje é %s. %s %n",nome,diaSemana,saudacao);
 
     }
 }
