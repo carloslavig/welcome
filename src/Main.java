@@ -1,7 +1,6 @@
 import java.time.format.TextStyle;
 import java.util.Scanner;
 import java.time.LocalDate;
-import java.time.format.TextStyle;
 import java.time.LocalDateTime;
 import java.util.Locale;
 
@@ -26,11 +25,22 @@ public class Main
 
         if (agora.getHour() >0 && agora.getHour() <12)
         {
-            saudacao = "Bom dia, DESGRAÇAAAAAAAAAAAAAAAAAAAAAA"
-        } else if (agora.getHour() >=12 && agora.getHour() <18)
-        {
-            saudacao= "Tarde sô"
+            saudacao = "Bom dia, DESGRAÇAAAAAAAAAAAAAAAAAAAAAA";
         }
+        else if (agora.getHour() >=12 && agora.getHour() <18)
+        {
+            saudacao= "Tarde sô";
+        }
+        else if (agora.getHour() >=18 && agora.getHour() <24)
+        {
+            saudacao= "Boa noite meu consagrado";
+        }
+        else
+        {
+            saudacao= "Salve";
+        }
+
+        System.out.printf("Olá, %s. Hoje é %s, %s. %n",nome,diaSemana,saudacao);
 
     }
 }
