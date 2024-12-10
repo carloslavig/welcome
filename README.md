@@ -1,4 +1,5 @@
 Greeting Program in Java
+
 This is a simple Java program that interacts with the user by greeting them based on their name, the current day of the week, and the time of day. The program adjusts the greeting dynamically, offering a personalized experience.
 
 Features
